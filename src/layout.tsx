@@ -1,88 +1,72 @@
 import React from "react";
-import {Box, Button, Container, Icon, Stack, Text} from "@chakra-ui/react";
+import {Box, Button, Container, Icon, Stack, Text, useColorMode} from "@chakra-ui/react";
+import {FaTwitter} from "react-icons/fa";
 import {
-  FaBell,
-  FaBookmark,
-  FaEllipsisH,
-  FaHashtag,
-  FaHome,
-  FaList,
-  FaTwitter,
-  FaUser,
-} from "react-icons/fa";
-import {BsEnvelope} from "react-icons/bs";
+  BsEnvelope,
+  BsHouse,
+  BsHash,
+  BsBell,
+  BsBookmark,
+  BsList,
+  BsPerson,
+  BsThreeDots,
+} from "react-icons/bs";
 import {Link} from "react-router-dom";
 
 const Layout: React.FC = ({children}) => {
+  const {toggleColorMode} = useColorMode();
+
   return (
     <Container alignSelf="center" height="100%" maxWidth="container.xl" paddingX={0}>
       <Stack direction="row" height="100%">
         <Stack
           borderRightColor="gray.700"
           borderRightWidth={1}
-          paddingLeft={4}
-          paddingRight={12}
-          paddingY={4}
+          minWidth={72}
+          paddingX={6}
+          paddingY={3}
           spacing={8}
         >
-          <Link to="/">
-            <Icon as={FaTwitter} height={6} width={6} />
-          </Link>
-          <Stack spacing={6}>
+          <Icon as={FaTwitter} height={7} width={7} onClick={toggleColorMode} />
+          <Stack fontSize="xl" fontWeight="bold" spacing={7}>
             <Link to="/">
               <Stack alignItems="center" direction="row" spacing={6}>
-                <Icon as={FaHome} height={6} width={6} />
-                <Text fontSize="lg" fontWeight="bold">
-                  Inicio
-                </Text>
+                <Icon as={BsHouse} height={6} width={6} />
+                <Text>Inicio</Text>
               </Stack>
             </Link>
             <Stack alignItems="center" direction="row" spacing={6}>
-              <Icon as={FaHashtag} height={6} width={6} />
-              <Text fontSize="lg" fontWeight="bold">
-                Explorar
-              </Text>
+              <Icon as={BsHash} height={6} width={6} />
+              <Text>Explorar</Text>
             </Stack>
             <Stack alignItems="center" direction="row" spacing={6}>
-              <Icon as={FaBell} height={6} width={6} />
-              <Text fontSize="lg" fontWeight="bold">
-                Notificaciones
-              </Text>
+              <Icon as={BsBell} height={6} width={6} />
+              <Text>Notificaciones</Text>
             </Stack>
             <Link to="messages">
               <Stack alignItems="center" direction="row" spacing={6}>
                 <Icon as={BsEnvelope} height={6} width={6} />
-                <Text fontSize="lg" fontWeight="bold">
-                  Mensajes
-                </Text>
+                <Text>Mensajes</Text>
               </Stack>
             </Link>
             <Stack alignItems="center" direction="row" spacing={6}>
-              <Icon as={FaBookmark} height={6} width={6} />
-              <Text fontSize="lg" fontWeight="bold">
-                Guardados
-              </Text>
+              <Icon as={BsBookmark} height={6} width={6} />
+              <Text>Guardados</Text>
             </Stack>
             <Stack alignItems="center" direction="row" spacing={6}>
-              <Icon as={FaList} height={6} width={6} />
-              <Text fontSize="lg" fontWeight="bold">
-                Listas
-              </Text>
+              <Icon as={BsList} height={6} width={6} />
+              <Text>Listas</Text>
             </Stack>
             <Stack alignItems="center" direction="row" spacing={6}>
-              <Icon as={FaUser} height={6} width={6} />
-              <Text fontSize="lg" fontWeight="bold">
-                Perfil
-              </Text>
+              <Icon as={BsPerson} height={6} width={6} />
+              <Text>Perfil</Text>
             </Stack>
             <Stack alignItems="center" direction="row" spacing={6}>
-              <Icon as={FaEllipsisH} height={6} width={6} />
-              <Text fontSize="lg" fontWeight="bold">
-                Mas opciones
-              </Text>
+              <Icon as={BsThreeDots} height={6} width={6} />
+              <Text>Mas opciones</Text>
             </Stack>
           </Stack>
-          <Button colorScheme="primary" size="lg">
+          <Button colorScheme="primary" size="lg" width="100%">
             Twittear
           </Button>
         </Stack>

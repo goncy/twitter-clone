@@ -1,5 +1,15 @@
 import React from "react";
-import {Box, Button, Container, Icon, Stack, Text, useColorMode} from "@chakra-ui/react";
+import {Link} from "react-router-dom";
+import {
+  Box,
+  Button,
+  Container,
+  Icon,
+  Stack,
+  Text,
+  StackDivider,
+  useColorMode,
+} from "@chakra-ui/react";
 import {FaTwitter} from "react-icons/fa";
 import {
   BsEnvelope,
@@ -11,22 +21,14 @@ import {
   BsPerson,
   BsThreeDots,
 } from "react-icons/bs";
-import {Link} from "react-router-dom";
 
 const Layout: React.FC = ({children}) => {
   const {toggleColorMode} = useColorMode();
 
   return (
     <Container alignSelf="center" height="100%" maxWidth="container.xl" paddingX={0}>
-      <Stack direction="row" height="100%">
-        <Stack
-          borderRightColor="gray.700"
-          borderRightWidth={1}
-          minWidth={72}
-          paddingX={6}
-          paddingY={3}
-          spacing={8}
-        >
+      <Stack direction="row" divider={<StackDivider />} height="100%">
+        <Stack minWidth={72} paddingX={6} paddingY={3} spacing={8}>
           <Icon as={FaTwitter} height={7} width={7} onClick={toggleColorMode} />
           <Stack fontSize="xl" fontWeight="bold" spacing={7}>
             <Link to="/">

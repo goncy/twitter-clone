@@ -1,7 +1,7 @@
 import React from "react";
-import {ChakraProvider, ColorModeScript} from "@chakra-ui/react";
 import ReactDOM from "react-dom";
 import {BrowserRouter} from "react-router-dom";
+import {ChakraProvider, ColorModeScript} from "@chakra-ui/react";
 
 import App from "./app";
 import theme from "./theme";

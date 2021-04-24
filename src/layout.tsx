@@ -45,7 +45,7 @@ const Layout: React.FC = ({children}) => {
               <Icon as={BsBell} height={6} width={6} />
               <Text>Notificaciones</Text>
             </Stack>
-            <Link to="messages">
+            <Link to="/messages">
               <Stack alignItems="center" direction="row" spacing={5}>
                 <Icon as={BsEnvelope} height={6} width={6} />
                 <Text>Mensajes</Text>

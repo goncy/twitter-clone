@@ -32,38 +32,38 @@ const Layout: React.FC = ({children}) => {
           <Icon as={FaTwitter} height={7} width={7} onClick={toggleColorMode} />
           <Stack fontSize="xl" fontWeight="bold" spacing={7}>
             <Link to="/">
-              <Stack alignItems="center" direction="row" spacing={6}>
+              <Stack alignItems="center" direction="row" spacing={5}>
                 <Icon as={BsHouse} height={6} width={6} />
                 <Text>Inicio</Text>
               </Stack>
             </Link>
-            <Stack alignItems="center" direction="row" spacing={6}>
+            <Stack alignItems="center" direction="row" spacing={5}>
               <Icon as={BsHash} height={6} width={6} />
               <Text>Explorar</Text>
             </Stack>
-            <Stack alignItems="center" direction="row" spacing={6}>
+            <Stack alignItems="center" direction="row" spacing={5}>
               <Icon as={BsBell} height={6} width={6} />
               <Text>Notificaciones</Text>
             </Stack>
             <Link to="messages">
-              <Stack alignItems="center" direction="row" spacing={6}>
+              <Stack alignItems="center" direction="row" spacing={5}>
                 <Icon as={BsEnvelope} height={6} width={6} />
                 <Text>Mensajes</Text>
               </Stack>
             </Link>
-            <Stack alignItems="center" direction="row" spacing={6}>
+            <Stack alignItems="center" direction="row" spacing={5}>
               <Icon as={BsBookmark} height={6} width={6} />
               <Text>Guardados</Text>
             </Stack>
-            <Stack alignItems="center" direction="row" spacing={6}>
+            <Stack alignItems="center" direction="row" spacing={5}>
               <Icon as={BsList} height={6} width={6} />
               <Text>Listas</Text>
             </Stack>
-            <Stack alignItems="center" direction="row" spacing={6}>
+            <Stack alignItems="center" direction="row" spacing={5}>
               <Icon as={BsPerson} height={6} width={6} />
               <Text>Perfil</Text>
             </Stack>
-            <Stack alignItems="center" direction="row" spacing={6}>
+            <Stack alignItems="center" direction="row" spacing={5}>
               <Icon as={BsThreeDots} height={6} width={6} />
               <Text>Mas opciones</Text>
             </Stack>

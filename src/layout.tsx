@@ -31,7 +31,7 @@ const Layout: React.FC = ({children}) => {
         <Stack minWidth={72} paddingX={6} paddingY={3} spacing={8}>
           <Icon as={FaTwitter} height={7} width={7} onClick={toggleColorMode} />
           <Stack fontSize="xl" fontWeight="bold" spacing={7}>
-            <Link to="/">
+            <Link to="/home">
               <Stack alignItems="center" direction="row" spacing={5}>
                 <Icon as={BsHouse} height={6} width={6} />
                 <Text>Inicio</Text>

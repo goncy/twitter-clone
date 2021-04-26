@@ -95,7 +95,7 @@ const Layout: React.FC = ({children}) => {
 
   return (
     <Container alignSelf="center" height="100%" maxWidth="container.xl" paddingX={0}>
-      <Stack direction="row" divider={<StackDivider />} height="100%">
+      <Stack direction="row" divider={<StackDivider margin={0} />} height="100%" spacing={0}>
         <Stack justifyContent="space-between">
           <Stack minWidth={72} paddingX={6} paddingY={3} spacing={8}>
             <Stack spacing={5}>
@@ -145,9 +145,7 @@ const Layout: React.FC = ({children}) => {
             <Icon as={BsThreeDots} />
           </Stack>
         </Stack>
-        <Box paddingX={4} width="100%">
-          {children}
-        </Box>
+        <Box width="100%">{children}</Box>
       </Stack>
     </Container>
   );

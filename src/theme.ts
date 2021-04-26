@@ -2,17 +2,13 @@ import {extendTheme, theme} from "@chakra-ui/react";
 import {mode} from "@chakra-ui/theme-tools";
 
 export default extendTheme({
-  config: {
-    initialColorMode: "dark",
-    useSystemColorMode: false,
-  },
   colors: {
     primary: theme.colors.twitter,
   },
   styles: {
     global: (props) => ({
       "html, body, #root": {
-        color: mode(undefined, "whiteAlpha.800")(props),
+        color: mode(undefined, "whiteAlpha.900")(props),
         height: "100%",
       },
     }),

@@ -80,7 +80,7 @@ const Navbar: React.FC<StackProps> = (props) => {
   const {pathname} = useLocation();
 
   return (
-    <Stack fontSize="xl" fontWeight="bold" spacing={7} {...props}>
+    <Stack fontSize="xl" fontWeight="bold" spacing={7} width="100%" {...props}>
       {LINKS.map((link) => (
         <Link key={link.href} to={link.href}>
           <Stack

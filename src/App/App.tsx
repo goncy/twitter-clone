@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <Container alignSelf="center" height="100%" maxWidth="container.xl" paddingX={0}>
       <Stack direction="row" divider={<StackDivider margin={0} />} height="100%" spacing={0}>
         <Stack justifyContent="space-between" maxWidth={275} width="100%">
-          <Stack paddingX={6} paddingY={3} spacing={8}>
+          <Stack paddingX={7} paddingY={3} spacing={8}>
             <Stack spacing={7}>
               <Logo />
               <Navbar />

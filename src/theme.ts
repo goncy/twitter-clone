@@ -17,6 +17,11 @@ export default extendTheme({
     sm: "0.95rem",
     xs: "0.9rem",
   },
+  sizes: {
+    container: {
+      xl: "1265px",
+    },
+  },
   components: {
     Button: {
       baseStyle: {

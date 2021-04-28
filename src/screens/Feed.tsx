@@ -51,6 +51,7 @@ const FeedScreen: React.FC = () => {
               fontSize="xl"
               paddingY={4}
               placeholder="¿Qué está pasando?"
+              rows={1}
               variant="unstyled"
             />
             <Stack alignItems="center" direction="row" justifyContent="space-between">

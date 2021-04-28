@@ -25,8 +25,7 @@ export default extendTheme({
   components: {
     Button: {
       baseStyle: {
-        borderLeftRadius: 9999,
-        borderRightRadius: 9999,
+        borderRadius: 9999,
       },
       sizes: {
         lg: {
@@ -41,6 +40,13 @@ export default extendTheme({
           fontWeight: "bold",
           _hover: {
             backgroundColor: `${props.colorScheme}.600`,
+          },
+        }),
+        outline: (props) => ({
+          borderColor: `${props.colorScheme}.500`,
+          color: mode(undefined, `${props.colorScheme}.500`)(props),
+          _hover: {
+            borderColor: `${props.colorScheme}.600`,
           },
         }),
       },

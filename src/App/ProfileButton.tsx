@@ -22,7 +22,7 @@ const ProfileButton: React.FC<StackProps> = (props) => {
           <Text fontSize="sm" fontWeight="bold" lineHeight="normal">
             goncy.tsx
           </Text>
-          <Text color="gray.500" fontSize="xs" lineHeight="normal">
+          <Text fontSize="xs" lineHeight="normal" textStyle="translucid">
             @goncy
           </Text>
         </Stack>

@@ -11,7 +11,20 @@ export default extendTheme({
         color: mode(undefined, "whiteAlpha.900")(props),
         height: "100%",
       },
+      "*::-webkit-scrollbar": {
+        display: "none",
+      },
     }),
+  },
+  textStyles: {
+    translucid: {
+      ".chakra-ui-light &": {
+        color: ["blackAlpha.100", "blackAlpha.500"],
+      },
+      ".chakra-ui-dark &": {
+        color: ["whiteAlpha.100", "whiteAlpha.500"],
+      },
+    },
   },
   fontSizes: {
     sm: "0.95rem",
